@@ -1,0 +1,10 @@
+version: '3'
+services:
+  example-backend-api:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "3004:3004"
+    environment:
+      - PORT=3004
